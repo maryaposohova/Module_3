@@ -80,4 +80,7 @@ print(list_my)
 
 Файл module_3_3.py и загрузите его на ваш GitHub репозиторий. В решении пришлите ссылку на него.
 
-Успехов!'''
+Успехов!
+
+https://urban-university.ru/members/courses/course999421818026/20231007-0000samostoatelnaa-rabota-po-uroku-raspakovka-pozicionnyh-parametrov-495057292756
+'''
