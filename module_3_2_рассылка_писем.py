@@ -75,4 +75,7 @@ send_email('Напоминаю самому себе о вебинаре', 'urba
 Именованные аргументы всегда идут после позиционных.
 
 Файл module_3_2.py и загрузите его на ваш GitHub репозиторий. В решении пришлите ссылку на него.
-Успехов!'''
+Успехов!
+
+https://urban-university.ru/members/courses/course999421818026/20231005-0000domasnaa-rabota-po-uroku-sposoby-vyzova-funkcii-685635746697
+'''
