@@ -4,9 +4,9 @@ def single_root_words(root_word, *other_words):
     same_words = []
     for i in other_words:
         if root_word.lower() in i.lower():  # с нижним регистром
-            same_words.append(i)  # переводим в нижний и добавляем в список
+            same_words.append(i)  #  добавляем в список
         if i.lower() in root_word.lower():  # с нижним регистром
-            same_words.append(i)  # переводим в нижний и добавляем в список
+            same_words.append(i)  # добавляем в список, (если ..append(i.lower())), то вывод будет в нижнем регистре)
     return same_words
 
 
