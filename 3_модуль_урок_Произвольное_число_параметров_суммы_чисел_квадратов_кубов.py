@@ -41,3 +41,16 @@ def my_sum(n, *args, txt="Сумма чисел"):
 my_sum(1, 1,2,3,4,5)
 my_sum(2, 1,2,3,4,5, txt='Сумма квадратов') # Сумма квадратов, n - степень 2
 my_sum(3, 1,2,3,4,5, txt='Сумма кубов') # Сумма кубов, n - степень 3
+
+# Самостоятельная работа. Задача "Однокоренные":
+
+def single_root_words(root_word , *other_words):
+    same_words =[]
+    for i in range(len(other_words)):
+        same_words += other_words
+    print(same_words)
+
+result1 = single_root_words('rich', 'richiest', 'orichalcum', 'cheers', 'richies')
+result2 = single_root_words('Disablement', 'Able', 'Mable', 'Disable', 'Bagel')
+print(result1)
+print(result2)
