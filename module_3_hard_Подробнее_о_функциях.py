@@ -1,15 +1,15 @@
 # a = 4
 # print(isinstance(a, int))
 
-
-data_structure = [
-    [1, 2, 3],
-    {'a': 4, 'b': 5},
-    (6, {'cube': 7, 'drum': 8}),
-    "Hello",
-    ((), [{(2, 'Urban', ('Urban2', 35))}])
-]
-sum = []
+#
+# data_structure = [
+#     [1, 2, 3],
+#     {'a': 4, 'b': 5},
+#     (6, {'cube': 7, 'drum': 8}),
+#     "Hello",
+#     ((), [{(2, 'Urban', ('Urban2', 35))}])
+# ]
+# sum = []
 # last = data_structure.pop()  # ытащили последний, и его надо разобрать
 # print("Оставили", last)
 # print("Убрали элемент1", data_structure)
@@ -484,6 +484,45 @@ sum = []
 
 
 
+'''Подструктуры'''
+# data_structure = [
+#     [1, 2, 3],
+#     {'a': 4, 'b': 5},
+#     (6, {'cube': 7, 'drum': 8}),
+#     "Hello",
+#     ((), [{(2, 'Urban', ('Urban2', 35))}])
+# ]
+#
+#
+# sum_ = []
+# def last_external(*list):
+#     last = data_structure.pop()
+#     print("Оставили", last)
+#
+#
+#
+# for last_ in data_structure:
+#     for last in data_structure:
+#         if isinstance(last, list):
+#             last_external()
+#         if isinstance(last, tuple):
+#             last = list(last)
+#             last_external()
+#         if isinstance(last, dict):
+#             last_external()
+#         if isinstance(last, int):
+#             sum_ = sum_ + last
+#         if isinstance(last, str):
+#             sum_ = sum_ + int(len(last))
+#
+#
+# print(last)
+# print(sum_)
+
+
+# print()
+# print()
+
 
 data_structure = [
     [1, 2, 3],
@@ -494,28 +533,36 @@ data_structure = [
 ]
 
 
-sum_ = []
+sum_ = ""
 def last_external(*list):
     last = data_structure.pop()
-    print("Оставили", last)
+    print(last)
+    for i in data_structure:
+        for last in data_structure:
+            if isinstance(last, list) == True:
+                last_external()
+
+
+# for i in data_structure:
+#     for last in data_structure:
+#         if isinstance(last, list)== True:
+#             last_external()
+#         if isinstance(last, tuple) == True:
+#              last_external()
+#         if isinstance(last, int)== True:
+#              sum_ = sum_ + last
+#         if isinstance(last, str)== True:
+#              print(len(list(last)))
+#              last = str(last)
+#              sum_ = sum_ + int(len(last))
+# #
+
+# for i in data_structure:
+#     for last in data_structure:
+#         if isinstance(last, list)== True:
+#             last_external()
 
 
 
-for last_ in data_structure:
-    for last in data_structure:
-        if isinstance(last, list):
-            last_external()
-        if isinstance(last, tuple):
-            last = list(last)
-            last_external()
-        if isinstance(last, dict):
-            last_external()
-        if isinstance(last, int):
-            sum_ = sum_ + last
-        if isinstance(last, str):
-            sum_ = sum_ + int(len(last))
 
-
-print(last)
 print(sum_)
-
