@@ -283,7 +283,7 @@
 #     last_1 = str(last_1)
 # print("Оставили", last_1)                                                   # [{(2, 'Urban', ('Urban2', 35))}]
 # last_2= list(last_1).pop()  # ытащили последний, и его надо разобрать
-# if isinstance(last_2, int) == True:
+# if data_structure
 #     last_2 = str(last_2)
 # print("Оставили", last_2)                                                    # {(2, 'Urban', ('Urban2', 35))}
 # last_3= list(last_2).pop()  # ытащили последний, и его надо разобрать
@@ -309,26 +309,26 @@
 
 
 # last = data_structure.pop()  # ытащили последний, и его надо разобрать
-# print("Оставили", last)                                                      #
+# print("Оставили", last)
 # if isinstance(last, str) == True:
 #     print(list(last))
-# print(len(list(last)))                                                       #
+# print(len(list(last)))
 # last_1 = list(last).pop()  # ытащили последний, и его надо разобрать
-# print("Оставили", last_1)                                                   #
+# print("Оставили", last_1)
 # last_2= list(last_1).pop()  # ытащили последний, и его надо разобрать
-# print("Оставили", last_2)                                                    #
+# print("Оставили", last_2)
 # last_3= list(last_2).pop()  # ытащили последний, и его надо разобрать
-# print("Оставили", last_3)                                                   #
+# print("Оставили", last_3)
 # print()
 #
 # last = data_structure.pop()  # ытащили последний, и его надо разобрать
-# print("Оставили", last)                                                      #
+# print("Оставили", last)
 # if isinstance(last, str) == True:
 #     print(list(last))
-# print(len(list(last)))                                                       #
-# print("Оставили", last_1)                                                   #
+# print(len(list(last)))
+# print("Оставили", last_1)
 # last_2= list(last_1).pop()  # ытащили последний, и его надо разобрать
-# print("Оставили", last_2)                                                    #
+# print("Оставили", last_2)
 # last_3= list(last_2).pop()  # ытащили последний, и его надо разобрать
 # print("Оставили", last_3)
 # print()
@@ -383,30 +383,16 @@
 
 
 
-# last_external()
-# last_external()
-# last_external()
-# last_external()
-# last_external()
+# calculate_structure_sum()
+# calculate_structure_sum()
+# calculate_structure_sum()
+# calculate_structure_sum()
 
-# for last in data_structure:
-#     if isinstance(last, list):
-#         last_external()
-#     if isinstance(last, tuple):
-#         last = list(last)
-#         last_external()
-#     if isinstance(last, dict):
-#         last_external()
-#         last_external()
-#     if isinstance(last, int):
-#          sum_ = sum_+last
-#     if isinstance(last, str):
-#          sum_ = sum_+ int(len(last))
 
 
 # for last in data_structure:
 #     if isinstance(last, list):
-#         last_external()
+#         calculate_structure_sum()
 #     if isinstance(last, int):
 #          sum_ = sum_+last
 #     elif isinstance(last, str):
@@ -414,7 +400,7 @@
 #
 # for last in data_structure:
 #     if isinstance(last, list):
-#         last_external()
+#         calculate_structure_sum()
 #     if isinstance(last, int):
 #          sum_ = sum_+last
 #     elif isinstance(last, str):
@@ -422,7 +408,7 @@
 #
 # for last in data_structure:
 #     if isinstance(last, list):
-#         last_external()
+#         calculate_structure_sum()
 #     if isinstance(last, int):
 #          sum_ = sum_+last
 #     elif isinstance(last, str):
@@ -430,7 +416,7 @@
 #
 # for last in data_structure:
 #     if isinstance(last, list):
-#         last_external()
+#         calculate_structure_sum()
 #     if isinstance(last, int):
 #         sum_ = sum_ + last
 #     elif isinstance(last, str):
@@ -438,7 +424,7 @@
 #
 # for last in data_structure:
 #     if isinstance(last, list):
-#         last_external()
+#         calculate_structure_sum()
 #     if isinstance(last, int):
 #         sum_ = sum_ + last
 #     elif isinstance(last, str):
@@ -446,7 +432,7 @@
 #
 # for last in data_structure:
 #     if isinstance(last, list):
-#         last_external()
+#         calculate_structure_sum()
 #     if isinstance(last, int):
 #         sum_ = sum_ + last
 #     elif isinstance(last, str):
@@ -454,7 +440,7 @@
 #
 # for last in data_structure:
 #     if isinstance(last, list):
-#         last_external()
+#         calculate_structure_sum()
 #     if isinstance(last, int):
 #         sum_ = sum_ + last
 #     elif isinstance(last, str):
@@ -462,7 +448,7 @@
 #
 # for last in data_structure:
 #     if isinstance(last, list):
-#         last_external()
+#         calculate_structure_sum()
 #     if isinstance(last, int):
 #         sum_ = sum_ + last
 #     elif isinstance(last, str):
@@ -470,7 +456,7 @@
 #
 # for last in data_structure:
 #     if isinstance(last, list):
-#         last_external()
+#         calculate_structure_sum()
 #     if isinstance(last, int):
 #         sum_ = sum_ + last
 #     elif isinstance(last, str):
@@ -494,8 +480,8 @@
 # ]
 #
 #
-# sum_ = []
-# def last_external(*list):
+# sum_ = 0
+# def calculate_structure_sum(*list):
 #     last = data_structure.pop()
 #     print("Оставили", last)
 #
@@ -504,12 +490,12 @@
 # for last_ in data_structure:
 #     for last in data_structure:
 #         if isinstance(last, list):
-#             last_external()
+#             calculate_structure_sum()
 #         if isinstance(last, tuple):
 #             last = list(last)
-#             last_external()
+#             calculate_structure_sum()
 #         if isinstance(last, dict):
-#             last_external()
+#             calculate_structure_sum()
 #         if isinstance(last, int):
 #             sum_ = sum_ + last
 #         if isinstance(last, str):
@@ -524,31 +510,23 @@
 # print()
 
 
-data_structure = [
-    [1, 2, 3],
-    {'a': 4, 'b': 5},
-    (6, {'cube': 7, 'drum': 8}),
-    "Hello",
-    ((), [{(2, 'Urban', ('Urban2', 35))}])
-]
-
-
-sum_ = ""
-def last_external(*list):
-    last = data_structure.pop()
-    print(last)
-    for i in data_structure:
-        for last in data_structure:
-            if isinstance(last, list) == True:
-                last_external()
+# data_structure = [
+#     [1, 2, 3],
+#     {'a': 4, 'b': 5},
+#     (6, {'cube': 7, 'drum': 8}),
+#     "Hello",
+#     ((), [{(2, 'Urban', ('Urban2', 35))}])
+# ]
+#
+#
 
 
 # for i in data_structure:
 #     for last in data_structure:
 #         if isinstance(last, list)== True:
-#             last_external()
+#             calculate_structure_sum()
 #         if isinstance(last, tuple) == True:
-#              last_external()
+#              calculate_structure_sum()
 #         if isinstance(last, int)== True:
 #              sum_ = sum_ + last
 #         if isinstance(last, str)== True:
@@ -560,9 +538,106 @@ def last_external(*list):
 # for i in data_structure:
 #     for last in data_structure:
 #         if isinstance(last, list)== True:
-#             last_external()
+#             calculate_structure_sum()
 
 
 
 
-print(sum_)
+
+
+
+data_structure = [
+    [1, 2, 3],
+    {'a': 4, 'b': 5},
+    (6, {'cube': 7, 'drum': 8}),
+    "Hello",
+    ((), [{(2, 'Urban', ('Urban2', 35))}])
+]
+print(data_structure)     #  [[1, 2, 3], {'a': 4, 'b': 5}, (6, {'cube': 7, 'drum': 8}), 'Hello', ((), [{(2, 'Urban', ('Urban2', 35))}])]
+print()
+print()
+sum_ = 0
+def calculate_structure_sum(data_structure):
+    last = data_structure.pop()
+    print(last)  #((), [{(2, 'Urban', ('Urban2', 35))}])
+    if isinstance(last, list):
+        last = data_structure.pop()
+        print(last)
+    if isinstance(last, tuple):
+        last = list(data_structure).pop()
+        print(last)
+    if isinstance(last, dict):
+        for k, v in data_structure.items:
+            print(k, v)
+
+result = calculate_structure_sum(data_structure)
+print(result)
+#
+print()
+print()
+
+def calculate_structure_sum(data_structure):
+    summ = 0
+    last = data_structure.pop()
+    print(last)  #  Hello
+    if isinstance(last, str):
+        print(summ + len(last))  #  5
+        summ = summ + len(last)  #  5
+    return summ
+
+result = calculate_structure_sum(data_structure)
+print(result)
+
+print()
+print()
+
+def calculate_structure_sum(data_structure):
+    last = data_structure.pop()
+    print(last)  #  (6, {'cube': 7, 'drum': 8})
+
+result = calculate_structure_sum(data_structure)
+print(result)
+
+print()
+print()
+
+def calculate_structure_sum(data_structure):
+    last = data_structure.pop()
+    print(last)  #  {'a': 4, 'b': 5}
+
+result = calculate_structure_sum(data_structure)
+print(result)
+
+print()
+print()
+
+def calculate_structure_sum(data_structure):
+    last = data_structure.pop()
+    print(last)  #[1, 2, 3]
+
+result = calculate_structure_sum(data_structure)
+print(result)
+
+def calculate_structure_sum(data_structure):
+    def calculate_structure_sum(data_structure):
+        sum_ = 0
+        len_ = 0
+        for i in len(data_structure):
+            i = data_structure.pop()
+            print("Оставили", last)
+            if isinstance(data_structure, int):
+                sum_ = sum_ + i
+                print(sum_)
+            elif isinstance(data_structure, str):
+                len_ = len_ + len(i)
+                print(len_)
+            elif isinstance(data_structure, list):
+                calculate_structure_sum(data_structure)
+
+
+result = calculate_structure_sum(data_structure)
+print(result)
+print()
+print()
+print()
+
