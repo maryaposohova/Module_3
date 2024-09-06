@@ -541,6 +541,71 @@
 #             calculate_structure_sum()
 
 
+# data_structure = [
+#     [1, 2, 3],
+#     {'a': 4, 'b': 5},
+#     (6, {'cube': 7, 'drum': 8}),
+#     "Hello",
+#     ((), [{(2, 'Urban', ('Urban2', 35))}])
+# ]
+#
+# summ_i = 0
+# summ_s = 0
+# for i in data_structure:
+#     print('Первый', i)
+#     if isinstance(i, (list, tuple)):
+#         for i in data_structure:
+#             print('Список и кортеж', i)
+#     if isinstance(i, dict):
+#         for key, value in i.items():
+#             summ_i = summ_i + value
+#             summ_s = summ_s + len(key)
+#             print('Словарь', i, i)
+#     if isinstance(i, int):
+#         summ_i = summ_i + i
+#         print(summ_i)
+#     if isinstance(i, str):
+#         summ_s = summ_s + len(i)
+#
+# result = (summ_i + summ_s)
+#
+# print(result)
+# print(summ_s)
+# print(summ_i)
+#
+# print()
+#
+# summ_i = 0
+# summ_s = 0
+# for i in data_structure:
+#     print('Первый', i)
+#     if isinstance(i, (list, tuple)):
+#         for i in data_structure:
+#             print('Список и кортеж', i)
+#     if isinstance(i, dict):
+#         for key, value in i.items():
+#             summ_i = summ_i + value
+#             summ_s = summ_s + len(key)
+#             print('Словарь', i, i)
+#     if isinstance(i, int):
+#         summ_i = summ_i + i
+#         print(summ_i)
+#     if isinstance(i, str):
+#         summ_s = summ_s + len(i)
+#
+# result = (summ_i + summ_s)
+#
+# print(result)
+# print(summ_s)
+# print(summ_i)
+
+
+
+
+
+
+''' Выше я неправильно думала'''
+
 data_structure = [
     [1, 2, 3],
     {'a': 4, 'b': 5},
@@ -549,53 +614,44 @@ data_structure = [
     ((), [{(2, 'Urban', ('Urban2', 35))}])
 ]
 
-summ_i = 0
-summ_s = 0
-for i in data_structure:
-    print('Первый', i)
-    if isinstance(i, (list, tuple)):
-        for i in data_structure:
-            print('Список и кортеж', i)
-    if isinstance(i, dict):
-        for key, value in i.items():
-            summ_i = summ_i + value
-            summ_s = summ_s + len(key)
-            print('Словарь', i, i)
-    if isinstance(i, int):
-        summ_i = summ_i + i
-        print(summ_i)
-    if isinstance(i, str):
-        summ_s = summ_s + len(i)
 
-result = (summ_i + summ_s)
+# # Словарь превратить в кортеж или список
+# dict_ =  {'a': 4, 'b': 5}
+# tuple_ = tuple(dict_.items())
+# tuple_in_list = list(dict_.items())
+# print(tuple_)
+# print(tuple_in_list)
+# print()
+# print()
 
+
+# пробегаемся циклами по всем вложенным сложным  элементам с условиями, и делаем это функцией
+# затем проверям в них числа и строки и добавляем их в общую сумму.
+
+def calculate_structure_sum(args):
+    summ = 0
+    if isinstance(args, (list, tuple, set)):
+        for i in args:
+            summ += calculate_structure_sum(i)
+    elif isinstance(args, dict):
+        args = list(args.items())
+        for i in args:
+            summ += calculate_structure_sum(i)
+    elif isinstance(args, str):
+        summ += len(args)
+    elif isinstance(args, int):
+        summ += int(args)
+
+    return summ
+
+
+result = calculate_structure_sum(data_structure)
 print(result)
-print(summ_s)
-print(summ_i)
 
-print()
 
-summ_i = 0
-summ_s = 0
-for i in data_structure:
-    print('Первый', i)
-    if isinstance(i, (list, tuple)):
-        for i in data_structure:
-            print('Список и кортеж', i)
-    if isinstance(i, dict):
-        for key, value in i.items():
-            summ_i = summ_i + value
-            summ_s = summ_s + len(key)
-            print('Словарь', i, i)
-    if isinstance(i, int):
-        summ_i = summ_i + i
-        print(summ_i)
-    if isinstance(i, str):
-        summ_s = summ_s + len(i)
 
-result = (summ_i + summ_s)
 
-print(result)
-print(summ_s)
-print(summ_i)
+
+
+
 
